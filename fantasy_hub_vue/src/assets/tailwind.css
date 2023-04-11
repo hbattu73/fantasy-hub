@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #f2f4f3;
+    min-width: 320px;
+}
+@layer components {
+    .btn-header {
+        @apply flex opacity-60 transition duration-500 ease-out hover:opacity-100 cursor-pointer
+    }
+}
+@layer base {
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number'] {
+      -webkit-appearance: none;
+      margin: 0;
+      -moz-appearance: textfield !important;
+  }
+}
