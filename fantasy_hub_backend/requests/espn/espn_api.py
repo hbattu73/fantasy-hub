@@ -1,7 +1,5 @@
 import requests
 import json
-import firebase_admin
-from firebase_admin import db
 from .constants import BASE_ENDPOINT, POSITIONS, COOKIES, BASE_PLAYER_HEADSHOT_URL
 
 class ESPN_Requests:

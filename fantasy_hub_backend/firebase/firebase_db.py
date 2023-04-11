@@ -1,8 +1,8 @@
 import sys
 import json
-import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import db
+import firebase_admin # type: ignore
+from firebase_admin import credentials # type: ignore
+from firebase_admin import db # type: ignore
 
 TRADE_VALS_DIR = '../trade_values/'
 

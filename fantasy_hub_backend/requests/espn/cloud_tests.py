@@ -1,7 +1,7 @@
 import requests
 import json
-import firebase_admin
-from firebase_admin import db
+import firebase_admin # type: ignore
+from firebase_admin import db # type: ignore
 BASE_ENDPOINT = 'https://fantasy.espn.com/apis/v3/games/ffl/seasons/'
 BASE_PLAYER_HEADSHOT_URL = 'https://a.espncdn.com/i/headshots/nfl/players/full/'
 BASE_TEAM_HEADSHOT_URL = 'https://a.espncdn.com/i/teamlogos/nfl/500/'
@@ -92,7 +92,7 @@ class ESPN_Cloud_Requests:
     def __init__(self, year: int, league_id: int=None, cookies: dict=None):
         self.year = year
         self.league_id = league_id
-        self.cookies = cookies if cookies else COOKIES
+        self.cookies = cookies
         self.ENDPOINT = BASE_ENDPOINT + str(year)
         self.LEAGUE_ENDPOINT = BASE_ENDPOINT + str(year) + '/segments/0/leagues/' + str(league_id)
 
